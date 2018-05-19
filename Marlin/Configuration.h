@@ -826,10 +826,10 @@
  * For other boards you may need to define FIL_RUNOUT_PIN.
  * By default the firmware assumes HIGH = has filament, LOW = ran out
  */
-//#define FILAMENT_RUNOUT_SENSOR  // LRW Modifed for CR-10s (uncommented)(recommented, need to define FIL_RUNOUT_PIN in pins.h)
+#define FILAMENT_RUNOUT_SENSOR  // LRW Modifed for CR-10s (uncommented)(recommented, need to define FIL_RUNOUT_PIN in pins.h)
 
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
-  #define FIL_RUNOUT_INVERTING true // set to true to invert the logic of the sensor.  // LRW Modifed for CR-10s
+  #define FIL_RUNOUT_INVERTING false // set to true to invert the logic of the sensor.  // LRW Modifed for CR-10s
   #define ENDSTOPPULLUP_FIL_RUNOUT // Uncomment to use internal pullup for filament runout pins if the sensor is defined.
   #define FILAMENT_RUNOUT_SCRIPT "M600"
 #endif
